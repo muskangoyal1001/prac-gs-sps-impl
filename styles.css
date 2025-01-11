@@ -20,23 +20,25 @@ body {
 .header .logo {
     display: flex;
     align-items: center;
-}
-
-.header .logo img {
     height: 40px;
+    margin-left: 20px;
 }
 
-.header .right-section {
+.user-icon{
+margin-right: 20px;
+}
+
+
+
+.right-section {
     display: flex;
     align-items: center;
-    gap: 20px;
-}
-
-.header .right-section img {
+    gap:2px;
     height: 35px;
     border-radius: 50%;
     cursor: pointer;
 }
+
 
 .main-wrapper {
     display: flex;
@@ -44,7 +46,7 @@ body {
 }
 
 .sidebar {
-    width: 20vw;
+    width: 30vw;
     background-color: #ffff;
     color: #d8d2d2;
     padding: 20px;
@@ -134,6 +136,7 @@ body {
     display: flex;
     flex-wrap: wrap;        
     gap:20px;
+    align-items: flex-start;
 }
 
 .card {
@@ -143,10 +146,11 @@ body {
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
     background: white;
     border: 1px solid #ddd;
-  
+    height: auto;
     width: 40%;
     display: flex;
     flex-direction: column;
+    
 }
 
 .card-header {
@@ -154,34 +158,54 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-left: 10px;
-    font-size: 18px;
-    font-weight: bold;
+   
     margin-bottom: 50px;
     color: #050505;
 }
 .card-header p{
     margin-left: 10px;
+  
 }
-.btn-card{
-   
-    padding: 15px 25px;
-    margin-left: auto;
-    gap: 10px; 
-    background-color: #004d99;
-    color: #ffff;
-    border: 2px solid #004d99;
-    border-radius: 2px;
-    font-weight: bold;
-    font-size: 1.0rem;
-    cursor: pointer;
-    text-align: center;
+.btn-card {
+  padding: 1em 2em; 
+  margin-left: auto;
+  gap: 0.5em; 
+  background-color: #004d99;
+  color: #ffffff;
+  border: 0.125em solid #004d99; 
+  border-radius: 0.125em;
+  font-weight: bold;
+  font-size: 1rem; 
+  cursor: pointer;
+  text-align: center;
+  display: inline-block; 
+  max-width: 90%; 
+  width: auto; 
+  box-sizing: border-box; 
+  transition: all 0.3s ease;
 }
 
-  
-  .card-header h2 {
-    font-size: 18px;
-    margin: 0;
-  }
+.btn-card:hover {
+  background-color: #003366; 
+  color: #e0e0e0; 
+  transform: scale(1.05); 
+}
+.text-wrapper {
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-desc {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0 0; 
+}
+
   
   .btn {
     background-color: #007bff;

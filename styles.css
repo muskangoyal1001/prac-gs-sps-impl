@@ -310,22 +310,50 @@ margin-right: 20px;
     background-color: #f0f8ff;
   } 
   @media (max-width: 980px) {
-    .card-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-left: 10px;
-     flex-direction: column;
-      margin-bottom: 50px;
-      color: #050505;
+    .sidebar {
+        width: 100%;
+    }
+
+    .dashboard-header {
+        justify-content: center;
+        padding: 0 15px;
+    }
+
+    .grid-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .request-item {
+        align-items: flex-start;
+    }
+}
+@media (max-width: 768px) {
+  .header-image {
+    display: none;
   }
-  .request-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-   gap:30px;
-   margin-bottom: 50px;
-   
-  }
-  }
+}
+
+@media (max-width: 600px) {
+    .header {
+    
+        height: auto;
+        padding: 10px;
+    }
+
+    .header .logo {
+        margin: 0;
+    }
+
+    .btn-card {
+        font-size: 0.9rem;
+        padding: 0.8em 1.5em;
+    }
+
+    .dashboard-header h1 {
+        font-size: 22px;
+    }
+}

@@ -25,18 +25,44 @@ body {
 }
 
 .user-icon{
-margin-right: 20px;
+  margin-right: 20px;
+  margin-left: 6px;
 }
 
+.bell-icon{
+  margin-left : 6px;
+ 
 
+}
 
 .right-section {
     display: flex;
-    align-items: center;
+    align-items: center;  
     gap:2px;
     height: 35px;
     border-radius: 50%;
     cursor: pointer;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.user-info {
+  padding: 40px;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.2; 
+}
+
+.user-name {
+  font-weight: bold; 
+  font-size: 16px;
+}
+
+.user-designation {
+  font-size: 12px;
+  color: #d0d0d0; 
 }
 
 
@@ -46,10 +72,10 @@ margin-right: 20px;
 }
 
 .sidebar {
-    width: 30vw;
+    width: 25vw;
     background-color: #ffff;
     color: #d8d2d2;
-    padding: 20px;
+    padding: 15px;
     height: 100%;
     box-sizing: border-box;
 }
@@ -77,36 +103,41 @@ margin-right: 20px;
 
 .main-content {
     flex-grow: 1;
-    padding: 50px;
     background-color: #f3f3f3;
     box-sizing: border-box;
 }
 
 .dashboard-header {
-    padding: 0, 30px;
-    display: flex;
-    align-items: center;
-
+ 
+  display: flex;
+  align-items: center; 
+  
+  height: 300px; 
+  background-image: url('assets/images/WP_people in modern office 1.png'); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  width: 100%; 
 }
 
 .dashboard-header h1 {
-    display: flex;
-    font-size: 35px;
-    color: #333;
+  margin-left: 77px;
+  font-size: 30px; 
+  color: #000; 
+  background: transparent; 
+ 
+}
+.header-image {
+  display: none; 
 }
 
-.header-image {
-    object-fit: cover;
-    margin-left: auto;
-    width: 70%;
-}
 
 .btn-1 {
+    margin-left:40px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 40px;
-    padding: 15px 25px;
+    padding: 12px 10px;
     gap: 10px;
     background-color: #ffffff;
     color: #004d99;
@@ -125,6 +156,7 @@ margin-right: 20px;
     object-fit: cover;
     cursor: pointer;
     border-radius: 5px;
+    
 }
 
 .btn-1:hover {
@@ -132,10 +164,10 @@ margin-right: 20px;
 }
 
  .grid-container {
-    margin-top: 20px;
+  margin: 24px 40px 24px 40px;
     display: flex;
     flex-wrap: wrap;        
-    gap:20px;
+    gap:24px;
     align-items: flex-start;
 }
 
@@ -147,27 +179,34 @@ margin-right: 20px;
     background: white;
     border: 1px solid #ddd;
     height: auto;
-    width: 40%;
+    
     display: flex;
     flex-direction: column;
+    width: 45%;
+    
     
 }
 
+
 .card-header {
+ 
+  margin-right: 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 10px;
-   
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     color: #050505;
 }
 .card-header p{
-    margin-left: 10px;
+    margin-left: 16px;
   
+
+}
+.card-header img{
+  margin: 24px 16px 24px 24px;
 }
 .btn-card {
-  padding: 1em 2em; 
+  padding: 12px 10px; 
   margin-left: auto;
   gap: 0.5em; 
   background-color: #004d99;
@@ -218,22 +257,20 @@ margin-right: 20px;
   
   .btn:hover {
     background-color: #0056b3;
-  }
+  } 
   
   .request-btn {
     font-size: 14px;
   }
   
-  .card-content {
-    margin: 15px 0;
-  }
-  
   .request-item {
+    margin-left: 24px;
+    margin-right: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
    gap:50px;
-   margin-bottom: 50px;
+   margin-bottom: 40px;
    
   }
   
@@ -244,7 +281,7 @@ margin-right: 20px;
   }
   
   .desc {
-    margin: 10px 0;
+    margin-top: 8px;
     color: #555;
   }
   
@@ -264,7 +301,7 @@ margin-right: 20px;
   }
   
   .date {
-    margin-top: 5px;
+    margin-top: 8px;
     font-size: 12px;
     color: #050505;
     font-weight: bold;
@@ -298,11 +335,13 @@ margin-right: 20px;
 
   
   .view-all-btn {
+    margin-left: 24px;
+    margin-right: 24px;
     font-size: 14px;
     background-color: white;
     color: #01070e;
     font-weight: bold;
-    padding: 15px 10px;
+    padding: 10px 12px;
     border: 2px solid #004d99;
   }
   

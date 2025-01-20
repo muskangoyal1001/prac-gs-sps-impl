@@ -1,234 +1,295 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  
+
+  font-family: 'Frutiger LT Std';
+
+  margin: 0;
+  padding: 0;
+
 }
 
 .header {
-    background-color: #004d99;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    color: #fff;
-    width: 100%;
-    box-sizing: border-box;
+  background-color: #004976;
+
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 40px;
+  color: #fff;
+  width: 100%;
+  gap: 16px;
+  box-sizing: border-box;
 }
+
+
 
 .header .logo {
-    display: flex;
-    align-items: center;
-    height: 40px;
-    margin-left: 20px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-left: 20px;
 }
 
-.user-icon{
+.user-icon {
   margin-right: 20px;
   margin-left: 6px;
 }
 
-.bell-icon{
-  margin-left : 6px;
- 
+.bell-icon {
+  margin-left: 6px;
+
 
 }
 
 .right-section {
-    display: flex;
-    align-items: center;  
-    gap:2px;
-    height: 35px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin-top: 14px;
-    margin-bottom: 14px;
-}
-.user-info {
-  padding: 40px;
   display: flex;
-  flex-direction: column; 
-  align-items: flex-start; 
+  align-items: center;
+  gap: 2px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 8px;
+
+  width: 114px;
+  height: 44px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
   color: #fff;
   font-size: 14px;
-  line-height: 1.2; 
+  line-height: 1.5;
 }
 
 .user-name {
-  font-weight: bold; 
+  font-weight: bold;
   font-size: 16px;
 }
 
 .user-designation {
   font-size: 12px;
-  color: #d0d0d0; 
+  color: #d0d0d0;
 }
 
 
 .main-wrapper {
-    display: flex;
-    flex-grow: 1;
+  display: flex;
+  flex-grow: 1;
 }
 
 .sidebar {
-    width: 25vw;
-    background-color: #ffff;
-    color: #d8d2d2;
-    padding: 15px;
-    height: 100%;
-    box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 10px;
+  gap: 16px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+  font-family: 'Frutiger LT Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  height: 100%;
+  box-sizing: border-box;
+
+  width: 234px;
+
+  top: 76px;
+  background: #FFFFFF;
 }
 
 .sidebar a {
-    display: flex;
-    align-items: center;
-    color: #5e5959;
-    text-decoration: none;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  color: #5e5959;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  gap: 10px;
 }
 
 .sidebar a img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 
 }
 
 .sidebar a:hover {
-    background-color: #bfc9d3;
+  background-color: #bfc9d3;
 }
 
 .main-content {
-    flex-grow: 1;
-    background-color: #f3f3f3;
-    box-sizing: border-box;
+  flex-grow: 1;
+  background-color: #f3f3f3;
+  box-sizing: border-box;
 }
 
 .dashboard-header {
- 
+
   display: flex;
-  align-items: center; 
-  
-  height: 300px; 
-  background-image: url('assets/images/WP_people in modern office 1.png'); 
-  background-size: cover; 
+  align-items: center;
+
+  height: 300px;
+  background-image: url('assets/images/WP_people in modern office 1.png');
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 100%; 
+  width: 100%;
 }
 
 .dashboard-header h1 {
+  font-family: 'Frutiger LT Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #101010;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
   margin-left: 77px;
-  font-size: 30px; 
-  color: #000; 
-  background: transparent; 
- 
+  background: transparent;
+
 }
+
 .header-image {
-  display: none; 
+  display: none;
 }
 
 
 .btn-1 {
-    margin-left:40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    padding: 12px 10px;
-    gap: 10px;
-    background-color: #ffffff;
-    color: #004d99;
-    border: 2px solid #004d99;
-    border-radius: 2px;
-    font-weight: bold;
-    font-size: 1.0rem;
-    cursor: pointer;
-    text-align: center;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 12px 10px;
+  gap: 10px;
+  background-color: #ffffff;
+  color: #004d99;
+  border: 2px solid #004d99;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 1.0rem;
+  cursor: pointer;
+  text-align: center;
 
 }
 
 .btn-image {
-    width: 20px;
-    height: 20px;
-    object-fit: cover;
-    cursor: pointer;
-    border-radius: 5px;
-    
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+
 }
 
 .btn-1:hover {
-    background-color: #d2e1f5;
+  background-color: #d2e1f5;
 }
 
- .grid-container {
+.grid-container {
+
   margin: 24px 40px 24px 40px;
-    display: flex;
-    flex-wrap: wrap;        
-    gap:24px;
-    align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+
 }
 
 .card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 2px;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
-    background: white;
-    border: 1px solid #ddd;
-    height: auto;
-    
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-    
-    
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 46%;
+  height: auto;
+  background: #FFFFFF;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
 }
 
 
 .card-header {
- 
-  margin-right: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    color: #050505;
-}
-.card-header p{
-    margin-left: 16px;
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #050505;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px;
+  gap: 16px;
+  height: 108px;
+  background: #FFFFFF;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
 
 }
-.card-header img{
-  margin: 24px 16px 24px 24px;
+
+.card-header p {
+  margin-left: 16px;
+
+
 }
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+
 .btn-card {
-  padding: 12px 10px; 
+  padding: 12px 10px;
   margin-left: auto;
-  gap: 0.5em; 
-  background-color: #004d99;
+  gap: 0.5em;
+  background-color: #0076A8;
   color: #ffffff;
-  border: 0.125em solid #004d99; 
+  border: 0.125em solid #0076A8;
   border-radius: 0.125em;
   font-weight: bold;
-  font-size: 1rem; 
+  font-size: 1rem;
   cursor: pointer;
   text-align: center;
-  display: inline-block; 
-  max-width: 90%; 
-  width: auto; 
-  box-sizing: border-box; 
+  display: inline-block;
+  max-width: 90%;
+  width: auto;
+  box-sizing: border-box;
   transition: all 0.3s ease;
 }
 
 .btn-card:hover {
-  background-color: #003366; 
-  color: #e0e0e0; 
-  transform: scale(1.05); 
+  background-color: #003366;
+  color: #e0e0e0;
+  transform: scale(1.05);
 }
+
 .text-wrapper {
   flex-grow: 1;
 }
@@ -242,157 +303,178 @@ body {
 .card-desc {
   font-size: 1rem;
   color: #555;
-  margin: 5px 0 0; 
+  margin: 5px 0 0;
 }
 
-  
-  .btn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
+
+.btn {
+  background-color: #0076A8;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.request-btn {
+  font-size: 14px;
+}
+
+.request-item {
+  margin-left: 24px;
+  margin-right: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 32px;
+
+}
+
+.request-item h3 {
+  margin: 0;
+  color: #0076A8;
+  font-size: 16px;
+}
+
+.desc {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 8px;
+  color: #101010;
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  text-align: right;
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 2px;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.date {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #050505;
+  font-weight: bold;
+}
+
+.status.emergency {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status.rush {
+  background-color: #e2e3f3;
+  color: #383d8c;
+}
+
+.status.normal {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.requested {
+  background-color: #e2e3f3;
+  color: #383d8c;
+}
+
+.status.in-progress {
+  background-color: #f3e9e2;
+  color: #8c5b38;
+}
+
+
+
+.view-all-btn {
+
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+  gap: 4px;
+
+  margin-bottom: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 2px solid #0076A8;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  font-family: 'Frutiger LT Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+
+
+}
+
+.view-all-btn:hover {
+  background-color: #f0f8ff;
+}
+
+@media (max-width: 980px) {
+
+  .dashboard-header {
+    justify-content: center;
+    padding: 0 15px;
   }
-  
-  .btn:hover {
-    background-color: #0056b3;
-  } 
-  
-  .request-btn {
-    font-size: 14px;
+
+  .grid-container {
+    flex-direction: column;
   }
-  
+
+  .card {
+    width: 100%;
+  }
+
   .request-item {
-    margin-left: 24px;
-    margin-right: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   gap:50px;
-   margin-bottom: 40px;
-   
+    align-items: flex-start;
   }
-  
-  .request-item h3 {
-    margin: 0;
-    color: #0056b3;
-    font-size: 16px;
-  }
-  
-  .desc {
-    margin-top: 8px;
-    color: #555;
-  }
-  
-  .left {
-    flex: 1;
-  }
-  
-  .right {
-    text-align: right;
-  }
-  
-  .status {
-    display: inline-block;
-    padding: 4px 10px;
-    border-radius: 2px;
-    font-size: 12px;
-  }
-  
-  .date {
-    margin-top: 8px;
-    font-size: 12px;
-    color: #050505;
-    font-weight: bold;
-  }
-  
-  .status.emergency {
-    background-color: #f8d7da;
-    color: #721c24;
-  }
-  
-  .status.rush {
-    background-color: #e2e3f3;
-    color: #383d8c;
-  }
-  
-  .status.normal {
-    background-color: #d4edda;
-    color: #155724;
-  }
-  
-  .status.requested {
-    background-color: #e2e3f3;
-    color: #383d8c;
-  }
-  
-  .status.in-progress {
-    background-color: #f3e9e2;
-    color: #8c5b38;
-  }
-  
-
-  
-  .view-all-btn {
-    margin-left: 24px;
-    margin-right: 24px;
-    font-size: 14px;
-    background-color: white;
-    color: #01070e;
-    font-weight: bold;
-    padding: 10px 12px;
-    border: 2px solid #004d99;
-  }
-  
-  .view-all-btn:hover {
-    background-color: #f0f8ff;
-  } 
-  @media (max-width: 980px) {
-    .sidebar {
-        width: 100%;
-    }
-
-    .dashboard-header {
-        justify-content: center;
-        padding: 0 15px;
-    }
-
-    .grid-container {
-        flex-direction: column;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .request-item {
-        align-items: flex-start;
-    }
 }
+
 @media (max-width: 768px) {
   .header-image {
     display: none;
   }
 }
 
-@media (max-width: 600px) {
-    .header {
-    
-        height: auto;
-        padding: 10px;
-    }
+@media (max-width: 900px) {
+  .header {
+    width: 1440px;
+    height: auto;
+    padding: 10px;
+  }
 
-    .header .logo {
-        margin: 0;
-    }
+  .header .logo {
+    margin: 0;
+  }
 
-    .btn-card {
-        font-size: 0.9rem;
-        padding: 0.8em 1.5em;
-    }
+  .btn-card {
+    font-size: 0.9rem;
+    padding: 0.8em 1.5em;
+  }
 
-    .dashboard-header h1 {
-        font-size: 22px;
-    }
+  .dashboard-header h1 {
+    font-size: 22px;
+  }
 }

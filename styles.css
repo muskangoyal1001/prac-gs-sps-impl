@@ -225,6 +225,7 @@ body {
   order: 0;
   align-self: stretch;
   flex-grow: 0;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.1); 
 
 }
 
@@ -449,6 +450,7 @@ body {
     width: 100%; 
     margin: 0 auto; 
     box-sizing: border-box; 
+
   }
 
   .request-item {
